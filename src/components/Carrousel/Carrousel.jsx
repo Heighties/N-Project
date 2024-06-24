@@ -15,9 +15,9 @@ export const Carrousel = ({ items }) => {
 
   const getItemsPerSlide = () => {
     if (window.innerWidth < 768) {
-      return 8;
+      return 6;
     } else if (window.innerWidth >= 768 && window.innerWidth <= 1280) {
-      return 8;
+      return 6;
     }
     return 8;
   };
