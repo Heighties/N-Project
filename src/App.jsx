@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/N-project">
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<HomePage />} />
