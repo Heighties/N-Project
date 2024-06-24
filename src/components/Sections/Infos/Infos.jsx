@@ -3,9 +3,9 @@ import React from 'react';
 const Infos = () => {
   return (
     <div className="w-full flex p-4">
-      <div className="flex sm:flex-col md:flex-row sm:items-center md:items-stretch sm:gap-12 md:gap-0 w-full">
+      <div className="flex sm:flex-col md:flex-row sm:items-center md:items-center lg:items-stretch sm:gap-12 md:gap-12 lg:gap-0 w-full">
         <div className='md:w-1/2'>
-        <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="md:w-full md:h-full sm:w-96 sm:h-96 object-cover" />
+        <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="lg:w-full lg:h-full sm:w-96 sm:h-96 md:w-96 md:h-96 object-cover" />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <h1 className="font-bold text-center sm:text-6xl md:text-4xl">
