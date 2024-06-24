@@ -23,7 +23,7 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="bg-black bg-opacity-80 p-8 rounded-sm w-screen max-w-screen-xl">
           <video controls className="w-full">
-            <source src={realisation.video} type="video/mp4" />
+            <source src={process.env.PUBLIC_URL+ realisation.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <h2 className="mt-4 text-white text-xl font-bold">{realisation.title}</h2>
