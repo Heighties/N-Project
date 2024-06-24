@@ -15,7 +15,7 @@ export const Carrousel = ({ items }) => {
 
   const getItemsPerSlide = () => {
     if (window.innerWidth < 768) {
-      return 6;
+      return 4;
     } else if (window.innerWidth >= 768 && window.innerWidth <= 1280) {
       return 6;
     }
@@ -203,7 +203,7 @@ export const Carrousel = ({ items }) => {
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
-              className="flex-none w-full ml-8 xl:ml-0 grid gap-2 sm:gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+              className="flex-none w-full ml-2 xl:ml-0 grid gap-4 sm:gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
             >
               {slide.map((item, index) => (
                 <RealCard key={index} realisation={item} openModal={openModal} />
