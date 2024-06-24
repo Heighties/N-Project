@@ -5,7 +5,7 @@ const Infos = () => {
     <div className="w-full flex p-4">
       <div className="flex sm:flex-col md:flex-row sm:items-center md:items-stretch sm:gap-12 md:gap-0 w-full">
         <div className='md:w-1/2'>
-        <img src="/photoP2.jpg" alt="Profile" className="md:w-full md:h-full sm:w-96 sm:h-96 object-cover" />
+        <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="md:w-full md:h-full sm:w-96 sm:h-96 object-cover" />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <h1 className="font-bold text-center sm:text-6xl md:text-4xl">

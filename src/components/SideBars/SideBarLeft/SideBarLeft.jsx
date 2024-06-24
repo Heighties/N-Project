@@ -7,7 +7,7 @@ const SideBarLeft = ({ scrollToSection }) => {
         onClick={() => scrollToSection("showreel")}
         className="w-2/4 mt-4 sticky top-4 z-10"
       >
-        <img src="/logo-nima-blanc.png" alt="Logo" />
+        <img src={process.env.PUBLIC_URL + "/logo-nima-blanc.png"} alt="Logo" />
       </button>
     </div>
   );

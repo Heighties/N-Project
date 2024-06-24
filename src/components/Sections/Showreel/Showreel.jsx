@@ -40,7 +40,7 @@ const Showreel = () => {
     <div className="relative bg-slate-200 w-screen min-h-screen">
       <video
         className="w-screen h-screen object-cover"
-        src="/showreel.mp4"
+        src={process.env.PUBLIC_URL + "/showreel.mp4"}
         muted
         loop
         autoPlay

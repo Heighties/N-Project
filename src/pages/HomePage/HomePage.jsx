@@ -87,7 +87,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop">
-        <img src="/logo-nima-noir.png" alt="Logo" className="h-40" />
+        <img src={process.env.PUBLIC_URL + "/logo-nima-noir.png"} alt="Logo" className="h-40" />
         <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className="text-black fixed text-7xl p-8 top-0 right-0">
           &#9776;
         </button>

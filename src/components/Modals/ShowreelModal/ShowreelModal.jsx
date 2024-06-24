@@ -47,7 +47,7 @@ const ShowreelModal = ({ isOpen, onRequestClose }) => {
       {/* Vidéo */}
       <video
         ref={videoRef} // Attribuer la référence videoRef à l'élément vidéo
-        src="/showreel.mp4"
+        src={process.env.PUBLIC_URL + "/showreel.mp4"}
         autoPlay
         controls // Affiche les contrôles vidéo
         controlsList="nodownload" // Empêcher le téléchargement de la vidéo
