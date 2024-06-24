@@ -51,3 +51,10 @@
     display: none !important;
   }
 }
+
+/* styles.css */
+.relative-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* or another suitable height */
+}
