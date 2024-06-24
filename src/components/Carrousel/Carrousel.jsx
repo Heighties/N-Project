@@ -86,7 +86,6 @@ export const Carrousel = ({ items }) => {
   const getUniqueCategories = () => {
     const categories = items.map(item => item.category);
     const uniqueCategories = [...new Set(categories)];
-    // Ajoute l'option "Tout" seulement si elle n'est pas déjà présente
     if (!uniqueCategories.includes('Tout')) {
       uniqueCategories.unshift('Tout');
     }
@@ -115,8 +114,8 @@ export const Carrousel = ({ items }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center border-black">
-      <div className="w-full flex justify-center mb-4">
+    <div className="relative flex flex-col items-center border-black overflow-hidden">
+      <div className="xl:w-full flex justify-center xl:mb-4">
         <Select
           value={selectedCategory}
           onChange={handleCategoryChange}
@@ -130,8 +129,8 @@ export const Carrousel = ({ items }) => {
               ...provided,
               backgroundColor: 'black',
               color: 'white',
-              border: 'none', // Remplace borderColor par border
-              borderRadius: '0', // No rounding
+              border: 'none',
+              borderRadius: '0',
               textAlign: 'center',
               width: '120px',
               transition: 'border-radius 0.3s',
@@ -152,12 +151,12 @@ export const Carrousel = ({ items }) => {
               ...provided,
               backgroundColor: 'rgba(0, 0, 0, 1.1)',
               color: 'white',
-              marginTop: '-1px', // Align menu with the control
+              marginTop: '-1px',
               borderTopLeftRadius: '0',
               borderTopRightRadius: '0',
-              borderBottomLeftRadius: '10px', // No rounding
-              borderBottomRightRadius: '10px', // No rounding
-              overflow: 'hidden', // Ensure no overflow
+              borderBottomLeftRadius: '10px',
+              borderBottomRightRadius: '10px',
+              overflow: 'hidden',
             }),
             menuList: (provided) => ({
               ...provided,
@@ -197,14 +196,14 @@ export const Carrousel = ({ items }) => {
       )}
       <div
         ref={containerRef}
-        className="flex overflow-x-auto hide-scrollbar"
+        className="flex overflow-x-auto hide-scrollbar overflow-hidden"
         onScroll={handleScroll}
       >
         <div className="flex flex-nowrap gap-4 p-4">
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
-              className="flex-none w-full grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+              className="flex-none w-full ml-8 xl:ml-0 grid gap-2 sm:gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
             >
               {slide.map((item, index) => (
                 <RealCard key={index} realisation={item} openModal={openModal} />
