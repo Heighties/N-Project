@@ -17,7 +17,7 @@ const Contact = () => {
                   <label htmlFor="firstName" className="block text-black font-semibold mb-1">Prénom</label>
                   <input type="text" id="firstName" name="firstName" className="w-full border border-gray-300 rounded-md py-2 px-3" />
                 </div>
-                <div className="w-1/2">
+                <div className="xl:w-1/2">
                   <label htmlFor="lastName" className="block text-black font-semibold mb-1">Nom</label>
                   <input type="text" id="lastName" name="lastName" className="w-full border border-gray-300 rounded-md py-2 px-3" />
                 </div>
