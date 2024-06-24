@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+
+  /* Dans votre fichier CSS ou dans une section dédiée au style */
+@media (min-width: 1600px) {
+  .small-screen-real-card {
+    /* Ajoutez ici les styles pour réduire la taille des cartes */
+    /* Par exemple, réduire la hauteur de l'image */
+    height: 12rem; /* Ajustez cette valeur selon vos besoins */
+  }
+}
