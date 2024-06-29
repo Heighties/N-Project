@@ -11,7 +11,7 @@ const Realisations = () => {
           <Carrousel items={data}/>
         </div>
       </div>
-      <div className="w-1/2 bg-black h-2 bottom-16 self-end"></div>
+      <div className="w-1/2 bg-black absolute h-2 bottom-16 self-end"></div>
     </div>
   );
 };

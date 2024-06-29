@@ -114,7 +114,7 @@ export const Carrousel = ({ items }) => {
   };
 
   return (
-    <div className="relative min-h-full flex flex-col items-center border-black overflow-hidden">
+    <div className="relative h-full w-full flex flex-col items-center border-black overflow-hidden">
       <div className="xl:w-full flex justify-center xl:mb-4">
         <Select
           value={selectedCategory}
@@ -178,6 +178,8 @@ export const Carrousel = ({ items }) => {
           }}
         />
       </div>
+      
+      <div className='min-h-full'>
       {scrollLeftVisible && (
         <button
           className="absolute top-1/2 left-0 transform -translate-y-1/2  z-40 bg-black bg-opacity-35 rounded-md ml-2"
@@ -199,7 +201,7 @@ export const Carrousel = ({ items }) => {
         className="flex overflow-x-auto hide-scrollbar overflow-hidden"
         onScroll={handleScroll}
       >
-        <div className="flex flex-nowrap gap-4 p-4">
+        <div className="flex flex-nowrap h-[22rem] md:h-[28rem] gap-4 p-4">
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
@@ -211,6 +213,7 @@ export const Carrousel = ({ items }) => {
             </div>
           ))}
         </div>
+      </div>
       </div>
       <RealisationModal isOpen={modalOpen} closeModal={closeModal} realisation={selectedRealisation} />
     </div>
