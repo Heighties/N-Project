@@ -3,12 +3,12 @@ import React from 'react';
 const Infos = () => {
   return (
     <div className="w-full flex p-4">
-      <div className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row items-center sm:items-center md:items-center lg:it ems-center xl:items-stretch sm:gap-12 md:gap-12 lg:gap-12 xl:gap-0 w-full">
+      <div className="flex flex-col md:flex-row items-center sm:items-center md:items-stretch sm:gap-12 md:gap-0 w-full">
         <div className='md:w-1/2'>
-        <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="w-40 h-40 sm:w-96 sm:h-96 md:w-96 md:h-96 lg:w-96 lg:h-96 xl:w-full xl:h-full object-cover object-top xl:object-center" />
+        <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="w-40 h-40 md:w-full md:h-full object-cover object-top xl:object-center" />
         </div>
         <div className="flex flex-col gap-2 w-full">
-          <h1 className="font-bold text-center sm:text-6xl md:text-4xl">
+          <h1 className="font-bold text-center sm:text-4xl md:text-4xl">
             <span>NIMA </span>
             <span>GHASHGHAEI</span>
           </h1>
