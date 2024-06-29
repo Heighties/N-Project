@@ -114,7 +114,7 @@ export const Carrousel = ({ items }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center border-black overflow-hidden">
+    <div className="relative min-h-full flex flex-col items-center border-black overflow-hidden">
       <div className="xl:w-full flex justify-center xl:mb-4">
         <Select
           value={selectedCategory}
