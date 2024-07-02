@@ -3,7 +3,7 @@ import React from 'react';
 const Infos = () => {
   return (
     <div className="w-full flex p-4">
-      <div className="flex flex-col md:flex-row items-center sm:items-center md:items-stretch sm:gap-12 md:gap-0 w-full">
+      <div className="flex flex-col md:flex-row items-center sm:items-center md:items-stretch gap-2 md:gap-0 w-full">
         <div className='md:w-1/2'>
         <img src={process.env.PUBLIC_URL + "/photoP2.jpg"} alt="Profile" className="w-40 h-40 xl:w-full xl:h-full object-cover object-top xl:object-center" />
         </div>
