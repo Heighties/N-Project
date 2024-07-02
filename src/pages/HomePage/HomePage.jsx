@@ -71,7 +71,7 @@ const HomePage = () => {
   return (
     <PageLayout scrollToSection={scrollToSection}>
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory hide-scrollbar">
-        <div className="sticky top-0 z-10 hidden md:block">
+        <div className="sticky top-0 z-10 hidden lg:block">
           <NavBar scrollToSection={scrollToSection} currentSection={currentSection} className="hide-on-mobile" />
         </div>
         <div className="h-screen flex items-center justify-center snap-start" ref={showreelRef}>
@@ -87,7 +87,7 @@ const HomePage = () => {
           <Contact />
         </div>
       </div>
-      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop xl:hidden z-30">        
+      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop md:hidden z-30">        
         <img src={process.env.PUBLIC_URL + "/logo-nima-noir.png"} alt="Logo" className="h-20" />
         <button 
                     onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} 
