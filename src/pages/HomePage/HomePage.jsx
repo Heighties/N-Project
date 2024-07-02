@@ -8,6 +8,7 @@ import Contact from "../../components/Sections/Contact/Contact";
 import PageLayout from "../../components/PageLayout/PageLayout";
 import Modal from "react-modal";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
+import "../../App.css";
 
 Modal.setAppElement("#root");
 
@@ -86,11 +87,16 @@ const HomePage = () => {
           <Contact />
         </div>
       </div>
-      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop">
+      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop xl:hidden z-30">        
         <img src={process.env.PUBLIC_URL + "/logo-nima-noir.png"} alt="Logo" className="h-20" />
-        <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className="text-black fixed text-2xl p-8 top-0 right-0">
-          &#9776;
-        </button>
+        <button 
+                    onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} 
+                    className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}
+                >
+                    <div className="bar1 z-50"></div>
+                    <div className="bar2 z-50"></div>
+                    <div className="bar3 z-50"></div>
+                </button>
       </div>
       {isMobileMenuOpen && (
         <MobileMenu scrollToSection={scrollToSection} setMobileMenuOpen={setMobileMenuOpen} />
