@@ -205,7 +205,7 @@ export const Carrousel = ({ items }) => {
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
-              className="flex-none w-full ml-2 xl:ml-0 grid gap-4 sm:gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+              className="flex-none w-full ml-2 xl:ml-0 grid gap-4 sm:gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4"
             >
               {slide.map((item, index) => (
                 <RealCard key={index} realisation={item} openModal={openModal} />
