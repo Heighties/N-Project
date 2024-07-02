@@ -9,11 +9,6 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
           }
         };
     
-        document.addEventListener('mousedown', handleOutsideClick);
-    
-        return () => {
-          document.removeEventListener('mousedown', handleOutsideClick);
-        };
       }, [isOpen, closeModal]);
     
       if (!isOpen) return null;
@@ -21,8 +16,8 @@ const RealisationModal = ({ isOpen, closeModal, realisation }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-black bg-opacity-80 p-8 rounded-sm w-screen max-w-screen-xl">
-          <video controls className="w-full">
+        <div className="bg-black bg-opacity-80 p-8 rounded-sm min-w-full min-h-screen flex flex-col items-center">
+          <video controls className="w-full md:w-1/2">
             <source src={process.env.PUBLIC_URL+ realisation.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
