@@ -5,11 +5,11 @@ import SideBarRight from "../SideBars/SideBarRight/SideBarRight";
 const PageLayout = ({ children, scrollToSection }) => {
   return (
     <div className="flex flex-row min-h-screen">
-      <div className="w-1/6 hide-on-mobile">
+      <div className="w-1/6 hide lg:block">
         <SideBarLeft scrollToSection={scrollToSection} />
       </div>
       <div className="w-full md:w-4/6">{children}</div>
-      <div className="w-1/6 hide-on-mobile">
+      <div className="w-1/6 hide lg:block">
         <SideBarRight />
       </div>
     </div>
