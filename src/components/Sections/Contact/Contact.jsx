@@ -10,25 +10,25 @@ const Contact = () => {
         
         {/* Formulaire de contact */}
         <form className='flex flex-col items-center'>
-          <div className='flex items-center lg:items-center md:items-stretch flex-col md:flex-row w-full xl:gap-24'>
-            <div className='flex flex-col w-3/4 md:w-1/2 xl:gap-2'>
+          <div className='flex items-center lg:items-center md:items-stretch flex-col md:flex-row w-full md:gap-4 xl:gap-24'>
+            <div className='flex flex-col w-3/4 md:w-1/2  xl:gap-2'>
               <div className='flex flex-row gap-4'>
                 <div className="md:w-1/2">
                   <label htmlFor="firstName" className="block text-black font-semibold mb-1">Prénom</label>
-                  <input type="text" id="firstName" name="firstName" className="w-full border border-gray-300 rounded-md py-2 px-3" />
+                  <input type="text" id="firstName" name="firstName" className="w-full border border-gray-300 rounded-md py-2 md:py-0 lg:py-2 px-3" />
                 </div>
                 <div className="md:w-1/2">
                   <label htmlFor="lastName" className="block text-black font-semibold mb-1">Nom</label>
-                  <input type="text" id="lastName" name="lastName" className="w-full border border-gray-300 rounded-md py-2 px-3" />
+                  <input type="text" id="lastName" name="lastName" className="w-full border border-gray-300 rounded-md py-2 md:py-0 lg:py-2 px-3" />
                 </div>
               </div>
               <div className="w-full">
                 <label htmlFor="email" className="block text-black font-semibold mb-1">E-mail</label>
-                <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded-md py-2 px-3" />
+                <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded-md py-2 md:py-0 lg:py-2 px-3" />
               </div>
               <div className="w-full">
                 <label htmlFor="subject" className="block text-black font-semibold mb-1">Objet</label>
-                <input type="text" id="subject" name="subject" className="w-full border border-gray-300 rounded-md py-2 px-3" />
+                <input type="text" id="subject" name="subject" className="w-full border border-gray-300 rounded-md py-2 md:py-0 lg:py-2 px-3" />
               </div>
             </div>
             <div className="w-3/4 md:w-1/2 h-32 xl:h-[198px]">
