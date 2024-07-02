@@ -182,7 +182,7 @@ export const Carrousel = ({ items }) => {
       <div className='min-h-full'>
       {scrollLeftVisible && (
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2  z-40 bg-black bg-opacity-35 rounded-md ml-2"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2  z-10 bg-black bg-opacity-35 rounded-md ml-2"
           onClick={scrollLeft}
         >
           <IoIosArrowBack size={32} />
@@ -190,7 +190,7 @@ export const Carrousel = ({ items }) => {
       )}
       {scrollRightVisible && (
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 mr-4 z-40 bg-black bg-opacity-35 rounded-md"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 mr-4 z-10 bg-black bg-opacity-35 rounded-md"
           onClick={scrollRight}
         >
           <IoIosArrowForward size={32} />
