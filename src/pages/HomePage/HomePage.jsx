@@ -87,7 +87,7 @@ const HomePage = () => {
           <Contact />
         </div>
       </div>
-      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 show-on-mobile hide-on-desktop lg:hidden z-30">        
+      <div className="fixed top-0 left-0 w-full justify-between items-center p-4 flex lg:hidden z-30">        
         <img src={process.env.PUBLIC_URL + "/logo-nima-noir.png"} alt="Logo" className="h-20" />
         <button 
                     onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} 
