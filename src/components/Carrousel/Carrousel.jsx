@@ -17,7 +17,7 @@ export const Carrousel = ({ items }) => {
     if (window.innerWidth < 768) {
       return 4;
     } else if (window.innerWidth >= 768 && window.innerWidth <= 1280) {
-      return 4;
+      return 8;
     }
     return 8;
   };

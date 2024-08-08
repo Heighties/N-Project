@@ -10,7 +10,7 @@ const Contact = () => {
         
         {/* Formulaire de contact */}
         <form className='flex flex-col items-center'>
-          <div className='flex items-center lg:items-center md:items-stretch flex-col md:flex-row w-full md:gap-4 xl:gap-24'>
+          <div className='flex items-center md:items-center xl:items-stretch flex-col lg:flex-row w-full md:gap-4 xl:gap-24'>
             <div className='flex flex-col w-3/4 md:w-1/2  xl:gap-2'>
               <div className='flex flex-row gap-4'>
                 <div className="md:w-1/2">
