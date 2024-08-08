@@ -11,7 +11,7 @@ const Contact = () => {
         {/* Formulaire de contact */}
         <form className='flex flex-col items-center'>
           <div className='flex items-center md:items-center xl:items-stretch flex-col lg:flex-row w-full md:gap-4 xl:gap-24'>
-            <div className='flex flex-col w-3/4 md:w-1/2  xl:gap-2'>
+            <div className='flex flex-col w-3/4 xl:w-1/2  xl:gap-2'>
               <div className='flex flex-row gap-4'>
                 <div className="md:w-1/2">
                   <label htmlFor="firstName" className="block text-black font-semibold mb-1">Prénom</label>
@@ -31,12 +31,12 @@ const Contact = () => {
                 <input type="text" id="subject" name="subject" className="w-full border border-gray-300 rounded-md py-2 md:py-0 lg:py-2 px-3" />
               </div>
             </div>
-            <div className="w-3/4 md:w-1/2 h-32 xl:h-[198px]">
+            <div className="w-3/4 xl:w-1/2 h-32 xl:h-[198px]">
               <label htmlFor="message" className="block text-black font-semibold mb-1">Votre message</label>
               <textarea id="message" name="message" className="w-full h-full border border-gray-300 rounded-md resize-none" rows="10"></textarea>
             </div>
           </div>
-          <button type="submit" className="bg-black text-white border-2 border-white font-bold py-2 px-4 mt-10 md:w-1/6 rounded-full">Envoyer</button>
+          <button type="submit" className="bg-black text-white border-2 border-white font-bold py-2 px-4 mt-10 xl:w-1/6 rounded-full">Envoyer</button>
         </form>
       </div>
       <div className="flex flex-row mt-2 xl:mt-4">
